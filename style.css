@@ -4,7 +4,7 @@ Universal Styles
 
 html {
     font-size: 16px;
-    color: #4A4A4A;
+    color: #000;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -26,7 +26,7 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    color: #002e54;
+    color: #000;
 }
 
 .h2-white {
@@ -35,7 +35,7 @@ h2 {
 
 h3 {
     font-size: 1.3125rem;
-    color: #002e54;
+    color: #000;
 }
 
 .h3-white {
@@ -133,3 +133,45 @@ header strong {
     }
 }
 
+/*--------------------------------------
+Learn something new
+--------------------------------------*/
+
+.learn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    background-color: antiquewhite;
+}
+
+.picture {
+    padding: 0;
+    margin-right: 0.75rem;
+    width: 60%;
+}
+
+.picture img {
+    width: 100%;
+}
+
+.learntextbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    text-align: left;
+}
+
+a#starthere {
+    width: 80%;
+    background-color: #cdb684;
+    padding: 0.75rem 0;
+    border-radius: 4rem;
+    border: 3px solid #000;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
