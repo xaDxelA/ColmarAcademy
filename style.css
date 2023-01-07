@@ -161,6 +161,11 @@ Learn something new
     align-items: center;
     justify-content: center;
     width: 40%;
+    align-self: center;
+}
+
+.textbox {
+    padding: 0rem 2.5rem;
     text-align: left;
 }
 
@@ -176,6 +181,191 @@ a#starthere {
     text-align: center;
 }
 
+/*Learn Something New Everyday Media Query for Desktop*/
+@media only screen and (min-width:1001px) {
+    a#starthere:hover {
+        background-color: #540008;
+        border: 4px solid #cdb684;
+        color: #fff;
+    }
+}
+
+/*Learn Something New Everyday Media Query for Mobile*/
+@media only screen and (min-width:200px) and (max-width: 1000px) {
+    .learn {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .learntextbox {
+        align-items: center;
+        margin: 2rem;
+        width: 80%;
+        padding: 0rem 2rem 2rem 2rem;
+        align-self: center;
+    }
+
+    .picture {
+        width: 100%;
+        margin:0;
+    }
+
+    a#starthere {
+        padding: 0;
+        font-weight: bold;
+        width: 100%;
+    }
+
+    .textbox {
+        padding: 0;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h3 {
+        font-size: 1rem;
+    }
+
+}
+
+/*--------------------------------------
+Articles
+--------------------------------------*/
+
+.articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 1.5rem;
+    background-color: #cdb68427;
+    border: 2px solid #cdb684;
+}
+
+/*Main Article*/
+.info-main {
+    width: 60%;
+    padding: 2rem 1.5rem;
+    border-right: 2px solid #cdb684;
+}
+
+.info-main img {
+    width: 100%;
+    margin-right: 0 1.5rem;
+}
+
+
+/*Sidebar*/
+.info-links {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 2rem 0;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#orientation, #campus {
+    border-bottom: 2px solid #cdb684;
+}
+
+.info-links .desktop-img {
+    width: 35%;
+    height: auto;
+    margin: 1rem;
+}
+
+#lecture .desktop-img {
+    width: 60%;
+    height: auto;
+    margin: 1rem;
+}
+
+.info-links .mobile-img {
+    display: none;
+}
+
+.info-links .text {
+    padding: 0 0.5rem;
+}
+
+.info-block a {
+    text-decoration: none;
+    color: #540008;
+}
+
+#cite {
+    padding-top: 2rem;
+    font-size: 0.7rem;
+    font-weight: lighter;
+}
+
+/*More Information Media Query for Desktop*/
+@media only screen and (min-width: 771px) {
+    .info-block:hover {
+        background-color: #54000859;
+        color: #fff;
+    }
+    
+    .info-block:hover h3  {
+        color: #fff;
+    }
+    
+    .info-block:hover a {
+        color: #cdb684;
+        font-weight: bold;
+    }
+}
+
+/*More Information Media Query for Mobile*/
+@media only screen and (min-width:200px) and (max-width: 770px) {
+
+    .articles {
+        padding: 1rem 1rem 0;
+    }
+
+    .info-main {
+        display: none;
+    }
+
+    .info-links {
+        width: 100%;
+        padding: 0;
+    }
+
+    .info-block {
+        display: block;
+    }
+
+    #orientation, #campus, #lecture {
+        border: 0;
+        margin-bottom: 2rem;
+    }
+
+    #campus, #lecture {
+        margin-top: 2rem;
+    }
+
+    .info-block .desktop-img {
+        display: none;
+    }
+
+    .info-block .mobile-img {
+        display: block;
+        width: 100%;
+    }
+
+    .info-block .text {
+        padding: 0 1rem;
+    }
+}
 
 /*--------------------------------------
 Footer
@@ -213,5 +403,16 @@ footer {
 @media only screen and (min-width:771px) {
     .footer-links a:hover {
         color: #cdb684;
+    }
+}
+
+/*Footer Media Query for Mobile*/
+@media only screen and (min-width:200px) and (max-width: 770px) {
+    footer {
+        padding: 1rem;
+    }
+    
+    .footer-links {
+        display: none;
     }
 }
