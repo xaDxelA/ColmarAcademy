@@ -283,7 +283,7 @@ Articles
 }
 
 #lecture .desktop-img {
-    width: 60%;
+    width: 40%;
     height: auto;
     margin: 1rem;
 }
@@ -364,6 +364,182 @@ Articles
 
     .info-block .text {
         padding: 0 1rem;
+    }
+}
+
+
+/*--------------------------------------
+Start Learning
+--------------------------------------*/
+.start-learning {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    background-color: rgba(240, 240, 240, 0.549);
+}
+
+.start-learning .courses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.course-card {
+    width: 26%;
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid white;
+}
+
+.course-card:hover {
+    transform: scale(1.075);
+}
+
+.start-learning img {
+    height: auto;
+    width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.start-learning .text {
+    margin-top: -1.5rem;
+    padding: 1rem 1rem 1.5rem;
+}
+
+.start-learning h2 {
+    color: #540008;
+}
+
+/*Start Learning Media Query for Mobile*/
+@media only screen and (min-width:200px) and (max-width: 770px) {
+    .start-learning {
+        border-bottom: 2px solid #cdb684;
+        border-top: 2px solid #cdb684;
+        padding: 2rem 1rem;
+    }
+
+    .start-learning .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-card {
+        width: 100%;
+        background-color: #fff;
+        margin: 0.5rem 0;
+    }
+
+    .start-learning .text {
+        margin: 1rem;
+        padding: 0;
+        text-align: center;
+    }
+
+    .start-learning h3 {
+        color: #540008;
+    }
+
+    .start-learning img {
+        display: none;
+    }
+
+    .start-learning p {
+        display: none;
+    }
+}
+
+/*--------------------------------------
+Thesis Exhibit
+--------------------------------------*/
+.thesis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 2rem 1.5rem;
+    background-color: #fff;
+}
+
+.thesis .row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+/*Main Article*/
+.thesis-main {
+    width: 60%;
+    padding-right: 1.5rem;
+}
+
+.thesis video {
+    width: 100%;
+}
+
+/*Sidebar*/
+.thesis aside {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border: 2px solid #fff;
+    border-bottom: none;
+}
+
+#Fisma, #now-then {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 2px solid #fff;
+}
+
+.thesis-block img {
+    height: auto;
+    width: 35%;
+    margin: 1rem;
+}
+
+.thesis-block .text {
+    padding: 0 0.5rem;
+}
+
+.thesis-block:hover {
+    background-color: #cdb684;
+    color: #540008;
+}
+
+.thesis-block:hover h3 {
+    color: #fff;
+}
+
+/*Thesis Exhibit Media Query for Mobile*/
+@media only screen and (min-width:200px) and (max-width: 770px) {
+    .thesis {
+        padding: 1rem 0 1.5rem 0;
+        /*margin: 1rem 0 ;*/
+    }
+    
+    .thesis-main {
+        width: 100%;
+        padding: 0;
+        /*margin-bottom: 1.5rem;*/
+    }
+    
+    .thesis aside {
+        display: none;
+    }
+
+    .thesis-main .text {
+        display: none;
+    }
+
+    .thesis h2 {
+        margin: 1rem 0;
     }
 }
 
